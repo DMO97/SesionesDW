@@ -63,6 +63,7 @@ button {
     background-color: #025157;
     color: #fff;
     border: none;
+    margin-top: 20px;
 }
 
 .principal > img {
@@ -369,7 +370,7 @@ form.signup-form button {
     grid-template: repeat(2, 330px) / repeat(2, 1fr);
 }
 
-.features .feature-art {
+.features .feature-card {
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
@@ -379,42 +380,43 @@ form.signup-form button {
     display: flex;
     align-items: center;
     overflow: hidden;
+    font-family: "Open Sans", sans-serif;
 }
 
-.features .feature-art .feature-content {
+.features .feature-card .feature-content {
     padding: 30px 20px 40px 40px;
     flex: 2;
 }
 
-.features .feature-art .feature-content > * {
+.features .feature-card .feature-content > * {
     margin-bottom: 1rem;
     margin-top: 0;
 }
 
-.features .feature-art .feature-content img {
+.features .feature-card .feature-content img {
     width: 50px;
 }
 
-.features .feature-art .feature-content h3 {
+.features .feature-card .feature-content h3 {
     font-size: 24px;
     color: #343434;
     font-weight: 400;
 }
 
-.features .feature-art .feature-content p {
+.features .feature-card .feature-content p {
     font-size: 16px;
     color: #7e7e7e;
     font-weight: 400;
 }
 
-.features .feature-art .feature-content a {
+.features .feature-card .feature-content a {
     font-size: 16px;
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
 }
 
-.features .feature-art .feature-image {
+.features .feature-card .feature-image {
     flex: 1;
     width: 40%;
     position: relative;
@@ -422,9 +424,115 @@ form.signup-form button {
     height: 80%;
 }
 
-.features .feature-art .feature-image figure,
-.features .feature-art .feature-image img {
+.features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
     margin-top: 0;
     height: 100%;
 }
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .navbar,
+    .actions {
+        display: none;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    main {
+        margin-top: 130px;
+    }
+
+    .banner > img {
+        width: 100%;
+    }
+
+    .principal > form {
+        flex-direction: column;
+    }
+
+    .principal > form > div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .principal > form > div > input {
+        width: 65%;
+    }
+
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .video-promo > video {
+        width: 100%;
+    }
+
+    .bloque2 {
+        margin-top: 10px;
+    }
+
+    .bloque2 > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+        margin-top: 30px;
+    }
+
+    form.signup-form {
+        display: flex;
+        font-size: 12px;
+    }
+
+    form.signup-form input {
+        height: 90%;
+        border: 1px solid #b6b6b6;
+        padding: 2px 20px;
+        width: 600%;
+        max-width: 160px;
+        border-radius: 5px;
+    }
+
+    form.signup-form button {
+        background-color: #025157;
+        color: #fff;
+        border: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 2px 20px;
+        margin-left: -10px;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .feature-image {
+        display: none;
+    }
+
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+}
+
+
 
