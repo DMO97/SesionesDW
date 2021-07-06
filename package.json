@@ -1,0 +1,22 @@
+{
+  "name": "santanderfront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMO97/SesionesDW.git"
+  },
+  "author": "David Mercado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DMO97/SesionesDW/issues"
+  },
+  "homepage": "https://github.com/DMO97/SesionesDW#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}
